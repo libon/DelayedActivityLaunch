@@ -24,7 +24,8 @@ On < Android 10:
 * Tap on the button
 * Before 5 seconds pass, press on home to bring the app in the background
 * Wait for 5 seconds to pass
-* The app becomes visible again, opened in the second activity
+* :white_check_mark: The app becomes visible again, opened in the second activity
+* [Screen recording](images/android7-home.webm)
 
 On Android 10:
 * Launch the app
@@ -33,7 +34,9 @@ On Android 10:
 * Wait for 5 seconds to pass
 * Reopen the app from the recents list
 * Expected behavior: the second screen appears
-* Actual behavior: On Android 10, the second screen isn't launched. The sample app is still on the first screen.
+* :x: Actual behavior: On Android 10, the second screen isn't launched. The sample app is still on the first screen.
+* [Screen recording](images/android10-home.webm)
+
 
 *Pressing recents*
 
@@ -42,7 +45,9 @@ On < Android 10:
 * Tap on the button
 * Before 5 seconds pass, press on recents to navigate to another app.
 * Wait for 5 seconds to pass
-* The sample app becomes visible again, opened in the second activity
+* :white_check_mark: The sample app becomes visible again, opened in the second activity
+* [Screen recording](images/android7-recents.webm)
+
 
 On Android 10:
 * Launch the app
@@ -50,4 +55,8 @@ On Android 10:
 * Before 5 seconds pass, press on recents to navigate to a different app
 * Wait for 5 seconds to pass
 * Expected behavior: The user doesn't notice anything. The second activity should be launched silently inside the sample app's task, but the currently-visible task remains visible.
-* Actual behavior: The sample app becomes visible again, opened in the second activity
+* :x: Actual behavior: The sample app becomes visible again, opened in the second activity
+* [Screen recording](images/android10-recents-doesntwork.webm)
+
+Note, during some tests, this scenario actually worked. I didn't figure out what made it work sometimes and not work sometimes. Here's the [screen recording of it working](images/android10-recents-works.webm).
+
